@@ -12,5 +12,3 @@ class AllCountries extends StatelessWidget {
     );
   }
 }
-
-//This is a test comment
