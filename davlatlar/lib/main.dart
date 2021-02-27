@@ -1,14 +1,10 @@
+import 'package:davlatlar/screens/country.dart';
 import 'package:flutter/material.dart';
+import 'package:davlatlar/screens/AllCountries.dart';
 
-class AllCountries extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.cyan[100],
-      appBar: AppBar(
-        backgroundColor: Colors.cyan,
-        title: Text('Countries'),
-      ),
-    );
-  }
+void main() {
+  runApp(new MaterialApp(
+    home: new AllCountries(),
+    routes: {Country.routeName: (ctx) => Country()},
+  ));
 }
